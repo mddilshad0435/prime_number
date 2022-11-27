@@ -1,4 +1,4 @@
-# E-commerce project
+# Prime Number 
 ## In this project you can register, login, logout a user after that you can get the prime numbers between two numbers and used the different method to get the prime number and save the details of the request in db
 
 ## Clone project use follwing command
