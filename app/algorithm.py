@@ -1,9 +1,11 @@
 import time
 def prime_algo_1(min,max):
+    min,max=int(min),int(max)
     start = time.time()
     primeList,flag = [],0
     if min==0:
         min=1
+    print(type(max))
     for i in range(min, max + 1):
         # Skip 1 as1 is neither
         if (i == 1):
@@ -18,8 +20,8 @@ def prime_algo_1(min,max):
         # and flag = 0 means i is not prime
         if (flag == 1):
             primeList.append(i)
-        end = time.time()
-        total_time = round(((end-start) * 10**3),4)
+    end = time.time()
+    total_time = round(((end-start) * 10**3),4)
     return primeList,total_time
 
 def prime_optimised(min,max):
@@ -29,7 +31,7 @@ def prime_optimised(min,max):
     if min==0:
         min=1
     if (min == 1):
-        primeList.append(min)
+        # primeList.append(min)
         min+=1
         if (max >= 2):
             primeList.append(min)
@@ -55,6 +57,6 @@ def prime_optimised(min,max):
         # and flag = 0 means i is not prime
         if (flag == 1):
             primeList.append(i)
-        end = time.time()
-        total_time = round(((end-start) * 10**3),4)
+    end = time.time()
+    total_time = round(((end-start) * 10**3),4)
     return primeList,total_time
